@@ -15,25 +15,28 @@ int main()
    item3,
    item4;
     double price1, price2, price3, price4, total;
-
+    
     std::cout << "Enter the name of an item: ";
     std::getline(std::cin, item1);
     std::cout << "Enter the price of " << item1 << ": ";
     std::cin >> price1;
     total = price1;
 
+    std::cin.ignore();
     std::cout << "Enter the name of another item: ";
     std::getline(std::cin, item2);
     std::cout << "Enter the price of " << item2 << ": ";
     std::cin >> price2;
     total += price2;
 
+    std::cin.ignore();
     std::cout << "Enter the name of another item: ";
     std::getline(std::cin, item3);
     std::cout << "Enter the price of " << item3 <<": ";
     std::cin >> price3;
     total += price3;
 
+    std::cin.ignore();
     std::cout << "Enter the name of another item: ";
     std::getline(std::cin,item4);
     std::cout << "Enter the price of " << item4 << ": ";
